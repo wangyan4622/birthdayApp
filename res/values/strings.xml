@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">My First App</string>
+    <string name="app_name">Happy Birthday</string>
     <string name="edit_message">Enter a message</string>
     <string name="button_music">Sing</string>
     <string name="button_video">Dance</string>
@@ -12,6 +12,6 @@
     <string name="hello_world">Hello world!</string>
     <string name="button_stop_text">Stop</string>
     <string name="button_pause_text">Pause</string>
-    <string name="title_activity_play_video">Happy birthday, DAIDAI !</string>
+    <string name="title_activity_play_video">Happy birthday, my darling !</string>
 
 </resources>

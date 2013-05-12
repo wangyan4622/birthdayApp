@@ -4,6 +4,8 @@ import android.app.Activity;
 import android.media.MediaPlayer;
 import android.media.MediaPlayer.OnCompletionListener;
 import android.os.Bundle;
+import android.util.Log;
+import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -67,6 +69,18 @@ public class PlayMusicActivity extends Activity {
 		// Inflate the menu; this adds items to the action bar if it is present.
 		getMenuInflater().inflate(R.menu.play_music, menu);
 		return true;
+	}
+	@Override
+	public boolean onKeyDown(int keyCode, KeyEvent event) {
+	    if ((keyCode == KeyEvent.KEYCODE_BACK)) {
+	    	if(mp!=null){
+	    		mp.release();
+	    	}
+	    	this.finish();
+	    	
+	        Log.d(this.getClass().getName(), "back button pressed");
+	    }
+	    return super.onKeyDown(keyCode, event);
 	}
 
 }
