@@ -49,5 +49,9 @@ public class MainActivity extends Activity {
 		Intent intent= new Intent(this,PlayVideoActivity.class);
 		startActivity(intent);
 	}
+	public void saySomethingNice(View view){
+		Intent intent= new Intent(this,PlayVideoActivity.class);
+		startActivity(intent);
+	}
 
 }
